@@ -20,11 +20,33 @@
 
 #book
 {
+  --book_rotation: 23.5deg; 
   position: absolute;
   /* left: 888px; */
-  top: 388px;
-  font-size: 65px;
-  color: #35978d;
-  rotate: 24deg;
+  /* top: 293px; */  
+  color: #3b7098;
+  transform-origin: 0% 0%;
+  rotate: var(--book_rotation);
+  width: 487px;
+  height: 630px;  
   /* font-weight: bold; */
+  /* background-color: #ff000055; */
+}
+
+#book > *
+{
+  position: absolute;
+  transform-origin: 0% 0%;
+}
+
+#book > img
+{
+  rotate: calc(var(--book_rotation) * -1);
+}
+
+.time
+{
+  rotate: calc(var(--book_rotation) * -0.5);
+  font-size: 72px;
+  line-height: 87%;  
 }
