@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import { useEffect, useState } from 'react';
 import './App.css';
+import pic from './AnchorageP.png';
 
 function App() {
   const anchorageAspectRadio = 1023 / 702;
@@ -29,7 +30,7 @@ function App() {
 
   return (<>
     <div id="bg"></div>
-    <img id="anchorage" alt='anchorage' src='/pic/AnchorageP.png' style={{ left: (width-height*anchorageAspectRadio)/2 }} />
+    <img id="anchorage" alt='anchorage' src={pic} style={{ left: (width-height*anchorageAspectRadio)/2 }} />
     <div id="book" style={{ left: (width-height*anchorageAspectRadio)/2 + 888 }}>
       <div id="date">{dateString}</div>
       <div id="time">{timeString}</div>
