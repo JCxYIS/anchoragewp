@@ -5,7 +5,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #000;
   z-index: 0;
   background: radial-gradient(circle at center, #ffffff 55%, #fbbfdd 100%);
 }
@@ -13,7 +12,7 @@
 #anchorage
 {
   position: absolute;
-  top: 0;
+  /* top: 0; */
   /* left: 0; */
   height: 100vh; /* == height */
 }
@@ -22,8 +21,6 @@
 {
   --book_rotation: 23.5deg; 
   position: absolute;
-  /* left: 888px; */
-  /* top: 293px; */  
   color: #3b7098;
   transform-origin: 0% 0%;
   rotate: var(--book_rotation);
