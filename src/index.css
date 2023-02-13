@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
 body {
-  margin: 0;
   font-family: 'Itim', fantasy;
+  font-size: 4.8763vw;
+  line-height: 87.63%;
+  text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  width: 100vw;
-  height: 100vh;
   overflow: hidden;
-  text-align: center;
+  background-color: black;
 }

@@ -1,3 +1,14 @@
+
+.container {
+  /* background-color: green; */
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  /* margin-top: 55%; */
+  padding-top: calc(702/1023*100%); /* Aspect Ratio */
+}
+
 #bg
 {
   position: absolute;
@@ -12,10 +23,13 @@
 #anchorage
 {
   position: absolute;
-  /* top: 0; */
-  /* left: 0; */
-  height: 100vh; /* == height */
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 100vh;  */
 }
+
+/* -------------------------------------------------------------------------- */ 
 
 #book
 {
@@ -24,26 +38,26 @@
   color: #3b7098;
   transform-origin: 0% 0%;
   rotate: var(--book_rotation);
-  width: 487px;
-  height: 630px;  
-  /* font-weight: bold; */
-  /* background-color: #ff000055; */
+  /* background-color: #39c5bb55; */
+  top: 30%;
+  left: 65%;
+  width: 37%;
+  height: 65%;  
 }
 
 #book > *
 {
   position: absolute;
-  transform-origin: 0% 0%;
+  transform-origin: 0% 0%;  /* set pivot at top-left corner */
 }
 
 #book > img
-{
-  rotate: calc(var(--book_rotation) * -1);
+{  
+  rotate: calc(var(--book_rotation) * -1);  /* img is already rotated */
 }
 
-.time
-{
-  rotate: calc(var(--book_rotation) * -0.5);
-  font-size: 72px;
-  line-height: 87%;  
+#time
+{    
+  top: 8%;
+  width: 94.87%;
 }
